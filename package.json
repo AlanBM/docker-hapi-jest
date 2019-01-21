@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "nodemon src/server.js",
-    "test": ""
+    "test": "jest"
   },
   "author": "",
   "license": "ISC"
