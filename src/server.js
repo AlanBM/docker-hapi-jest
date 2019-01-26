@@ -5,7 +5,7 @@ const Hapi = require('hapi')
 // configuration object
 const server = Hapi.server({
   port: 3000,
-  host: '0.0.0.0'//0.0.0.0 instead of "localhost" for docker purposes
+  host: '0.0.0.0'//0.0.0.0 instead of "localhost" for docker purposesd
 })
 
 // adding a route

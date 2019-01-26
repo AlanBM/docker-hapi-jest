@@ -1,13 +1,15 @@
 FROM node:latest
 
-MAINTAINER abustamante
+MAINTAINER alanbm
 
-ENV NODE_ENV=production
+ENV NODE_ENV=dev
 ENV PORT=3000
 
-ADD . /src
+COPY . /src
 WORKDIR /src
 
-RUN npm install
+RUN npm install && npm install --dev
 
 EXPOSE $PORT
+
+CMD [ "npm", "start" ]
